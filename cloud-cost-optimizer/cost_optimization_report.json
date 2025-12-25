@@ -1,0 +1,181 @@
+{
+    "project_name": "E-commerce Market Analysis Tool",
+    "analysis": {
+        "total_monthly_cost": 19275,
+        "budget": 3000,
+        "budget_variance": 16275,
+        "service_costs": {
+            "EC2": 15000,
+            "RDS": 2500,
+            "S3": 300,
+            "Nginx": 600,
+            "MongoDB": 875
+        },
+        "high_cost_services": {
+            "EC2": 15000,
+            "RDS": 2500,
+            "MongoDB": 875
+        },
+        "is_over_budget": true
+    },
+    "recommendations": [
+        {
+            "title": "Migrate to DigitalOcean for EC2",
+            "service": "EC2",
+            "current_cost": 15000,
+            "potential_savings": 6000,
+            "recommendation_type": "alternative_provider",
+            "description": "Consider migrating EC2 instances to DigitalOcean for cost savings",
+            "implementation_effort": "high",
+            "risk_level": "medium",
+            "steps": [
+                "Assess EC2 instance requirements",
+                "Choose DigitalOcean droplet plan",
+                "Migrate EC2 instances to DigitalOcean"
+            ],
+            "cloud_providers": [
+                "AWS",
+                "DigitalOcean"
+            ]
+        },
+        {
+            "title": "Use MongoDB Atlas for MongoDB",
+            "service": "MongoDB",
+            "current_cost": 875,
+            "potential_savings": 400,
+            "recommendation_type": "alternative_provider",
+            "description": "Consider using MongoDB Atlas for cost savings and scalability",
+            "implementation_effort": "medium",
+            "risk_level": "low",
+            "steps": [
+                "Assess MongoDB requirements",
+                "Choose MongoDB Atlas plan",
+                "Migrate MongoDB to MongoDB Atlas"
+            ],
+            "cloud_providers": [
+                "AWS",
+                "Azure",
+                "GCP"
+            ]
+        },
+        {
+            "title": "Optimize Nginx Configuration",
+            "service": "Nginx",
+            "current_cost": 600,
+            "potential_savings": 200,
+            "recommendation_type": "right_sizing",
+            "description": "Optimize Nginx configuration to reduce instance size",
+            "implementation_effort": "low",
+            "risk_level": "low",
+            "steps": [
+                "Assess Nginx instance requirements",
+                "Optimize Nginx configuration",
+                "Downsize Nginx instance"
+            ],
+            "cloud_providers": [
+                "AWS",
+                "Azure",
+                "GCP"
+            ]
+        },
+        {
+            "title": "Use Azure Cosmos DB for MongoDB",
+            "service": "MongoDB",
+            "current_cost": 875,
+            "potential_savings": 700,
+            "recommendation_type": "alternative_provider",
+            "description": "Consider using Azure Cosmos DB for cost savings and scalability",
+            "implementation_effort": "high",
+            "risk_level": "medium",
+            "steps": [
+                "Assess MongoDB requirements",
+                "Choose Azure Cosmos DB plan",
+                "Migrate MongoDB to Azure Cosmos DB"
+            ],
+            "cloud_providers": [
+                "AWS",
+                "Azure"
+            ]
+        },
+        {
+            "title": "Use Google Cloud SQL for RDS",
+            "service": "RDS",
+            "current_cost": 2500,
+            "potential_savings": 1000,
+            "recommendation_type": "alternative_provider",
+            "description": "Consider using Google Cloud SQL for cost savings and scalability",
+            "implementation_effort": "high",
+            "risk_level": "medium",
+            "steps": [
+                "Assess RDS requirements",
+                "Choose Google Cloud SQL plan",
+                "Migrate RDS to Google Cloud SQL"
+            ],
+            "cloud_providers": [
+                "AWS",
+                "GCP"
+            ]
+        },
+        {
+            "title": "Use Open-Source Load Balancer",
+            "service": "Nginx",
+            "current_cost": 600,
+            "potential_savings": 300,
+            "recommendation_type": "open_source",
+            "description": "Consider using an open-source load balancer like HAProxy",
+            "implementation_effort": "medium",
+            "risk_level": "low",
+            "steps": [
+                "Assess Nginx instance requirements",
+                "Choose open-source load balancer",
+                "Migrate Nginx to open-source load balancer"
+            ],
+            "cloud_providers": [
+                "AWS",
+                "Azure",
+                "GCP"
+            ]
+        },
+        {
+            "title": "Use AWS Free Tier for S3",
+            "service": "S3",
+            "current_cost": 300,
+            "potential_savings": 150,
+            "recommendation_type": "free_tier",
+            "description": "Consider using AWS Free Tier for S3",
+            "implementation_effort": "low",
+            "risk_level": "low",
+            "steps": [
+                "Assess S3 requirements",
+                "Choose AWS Free Tier plan",
+                "Migrate S3 to AWS Free Tier"
+            ],
+            "cloud_providers": [
+                "AWS"
+            ]
+        },
+        {
+            "title": "Use Azure Blob Storage for S3",
+            "service": "S3",
+            "current_cost": 300,
+            "potential_savings": 200,
+            "recommendation_type": "alternative_provider",
+            "description": "Consider using Azure Blob Storage for cost savings",
+            "implementation_effort": "medium",
+            "risk_level": "low",
+            "steps": [
+                "Assess S3 requirements",
+                "Choose Azure Blob Storage plan",
+                "Migrate S3 to Azure Blob Storage"
+            ],
+            "cloud_providers": [
+                "AWS",
+                "Azure"
+            ]
+        }
+    ],
+    "summary": {
+        "total_potential_savings": 8950,
+        "recommendations_count": 8
+    }
+}
